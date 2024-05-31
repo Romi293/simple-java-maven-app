@@ -1,6 +1,6 @@
 name: CI_CD_Pipeline
 on:
-  push:
+  push: 
     branches:
       - master
       - feature
@@ -9,7 +9,7 @@ on:
 
 jobs:
   dependency-scan:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
